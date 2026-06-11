@@ -2,7 +2,7 @@
 
 Suspicion on Space Station is a fork of Space Station 14, a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
-This is a fork of the Suspicion on Space Station repo. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
+This is a fork of the Suspicion on Space Station repo, Suspicion on Space Station itself being a fork of Wizard's Den Space Station 14, the primary fork of SS14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
 
 If you want to host or create content for this specific server, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
 
