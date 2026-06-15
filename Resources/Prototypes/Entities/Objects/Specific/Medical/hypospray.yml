@@ -566,13 +566,9 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 30
         reagents:
-        - ReagentId: Epinephrine
-          Quantity: 3
-        - ReagentId: TranexamicAcid
-          Quantity: 3
         - ReagentId: Omnizine
-          Quantity: 9
+          Quantity: 30
   - type: Tag
     tags: []
