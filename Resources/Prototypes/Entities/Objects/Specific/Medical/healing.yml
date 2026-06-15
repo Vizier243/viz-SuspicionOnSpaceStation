@@ -28,6 +28,7 @@
   - type: Item
     heldPrefix: ointment
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -79,6 +80,7 @@
   - type: Item
     heldPrefix: regenerative-mesh
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -119,6 +121,7 @@
   - type: Sprite
     state: brutepack
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -168,6 +171,7 @@
     heldPrefix: medicated-suture
     storedRotation: -90
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -206,6 +210,7 @@
   - type: Sprite
     state: bloodpack
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -272,6 +277,7 @@
     graph: Gauze
     node: gauze
   - type: Healing
+    delay: 0.5
     damageContainers:
       - Biological
     damage:
