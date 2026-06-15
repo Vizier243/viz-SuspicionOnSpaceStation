@@ -15,7 +15,7 @@
 
 - type: entity
   name: ointment
-  description: Used to treat those nasty burns. Less effective on caustic burns.
+  description: Treats burn wounds. Less effective on chemical-induced burns, but can still heal them.
   parent: BaseHealingItem
   id: Ointment
   suffix: Full
@@ -28,6 +28,7 @@
   - type: Item
     heldPrefix: ointment
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -66,7 +67,7 @@
 
 - type: entity
   name: regenerative mesh
-  description: Used to treat even the nastiest burns. Also effective against caustic burns.
+  description: Effective against regular and caustic burns.
   parent: BaseHealingItem
   id: RegenerativeMesh
   suffix: Full
@@ -79,6 +80,7 @@
   - type: Item
     heldPrefix: regenerative-mesh
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -108,7 +110,7 @@
 
 - type: entity
   name: bruise pack
-  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  description: Treats blunt-force trauma.
   parent: BaseHealingItem
   id: Brutepack
   suffix: Full
@@ -119,6 +121,7 @@
   - type: Sprite
     state: brutepack
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -154,7 +157,7 @@
 
 - type: entity
   name: medicated suture
-  description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
+  description: Treats blunt-force trauma and stops wounds. Pretty neat.
   parent: BaseHealingItem
   id: MedicatedSuture
   suffix: Full
@@ -168,6 +171,7 @@
     heldPrefix: medicated-suture
     storedRotation: -90
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -195,7 +199,7 @@
 
 - type: entity
   name: blood pack
-  description: Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
+  description: It's a blood pack. Regenerates blood, and is also somehow magically compatible with all species.
   parent: BaseHealingItem
   id: Bloodpack
   suffix: Full
@@ -206,6 +210,7 @@
   - type: Sprite
     state: bloodpack
   - type: Healing
+    delay: 1
     damageContainers:
       - Biological
     damage:
@@ -234,7 +239,7 @@
   parent: BaseHealingItem
   id: Tourniquet
   name: tourniquet
-  description: Stops bleeding! Hopefully.
+  description: Might stop bleeding... Also deals minor Asphyxiation and Brute damage.
   components:
     - type: Tag
       tags:
@@ -258,7 +263,7 @@
 
 - type: entity
   name: roll of gauze
-  description: Some sterile gauze to wrap around bloody stumps.
+  description: Simple gauze, stops bleeding.
   parent: BaseHealingItem
   id: Gauze
   suffix: Full
@@ -272,6 +277,7 @@
     graph: Gauze
     node: gauze
   - type: Healing
+    delay: 0.5
     damageContainers:
       - Biological
     damage:
@@ -323,7 +329,7 @@
   parent: BaseHealingItem
   id: HealingToolbox
   name: healing toolbox
-  description: A powerful toolbox imbued with robust energy. It can heal your wounds and fill you with murderous intent.
+  description: Toolbox that does a very good job at healing. No expertise required to use.
   suffix: DO NOT MAP
   components:
   - type: Sprite
