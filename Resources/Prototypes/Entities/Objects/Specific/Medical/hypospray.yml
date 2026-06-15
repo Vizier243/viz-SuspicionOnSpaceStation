@@ -550,7 +550,8 @@
 - type: entity
   name: healthpen
   parent: ChemicalMedipen
-  id: Healthpen
+  id: SuspicionHealthpen
+  suffix: SUSPICION ONLY
   description: A small Nanotrasen-branded autoinjector containing omnizine, along with Epinephrine and Tranexamic Acid. Good for dire situations.
   components:
   - type: Sprite
