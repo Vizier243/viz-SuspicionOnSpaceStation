@@ -546,3 +546,32 @@
     - id: Hypopen
     sound:
       path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: healthpen
+  parent: ChemicalMedipen
+  id: Healthpen
+  description: A small Nanotrasen-branded autoinjector containing omnizine, along with Epinephrine and Tranexamic Acid. Good for dire situations.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 3
+        - ReagentId: TranexamicAcid
+          Quantity: 3
+        - ReagentId: Omnizine
+          Quantity: 9
+  - type: Tag
+    tags: []
