@@ -1,25 +1,26 @@
 ﻿# Contains the gear for the suspicion gamemode. Most of this stuff will be unremovable.
 
 - type: entity
-  parent: ClothingHeadsetGrey
+  parent: ClothingHeadsetAltSecurity
   id: ClothingHeadsetGreySuspicion
-  name: passenger headset
+  name: security bowman headset
+  description: Not a headset to listen to tunes with, unfortunately.
   components:
   - type: Unremoveable
 
 - type: entity
-  parent: ClothingUniformJumpsuitColorWhite
+  parent: ClothingUniformJumpsuitERTSecurity
   id: ClothingUniformJumpsuitColorWhiteSuspicion
-  name: white jumpsuit
-  description: A generic white jumpsuit with no rank markings.
+  name: emergency response security jumpsuit
+  description: A security jumpsuit. Seems standard enough.
   components:
   - type: Unremoveable
 
 - type: entity
-  parent: ClothingBackpack
+  parent: ClothingBackpackSecurity
   id: ClothingBackpackSuspicion
-  name: backpack
-  description: You wear this on your back and put items into it. It seems like weapons just don't fit in there.
+  name: security backpack
+  description: A very robust military backpack. For some reason, guns don't seem to fit in it...
   components:
   - type: Unremoveable
   - type: Storage
@@ -31,7 +32,7 @@
       - Gun
 
 - type: entity
-  parent: ClothingOuterVestWebMerc
+  parent: ClothingOuterArmorBasic
   id: ClothingOuterVestWebMercSuspicion
   suffix: SSS
   components:
@@ -73,7 +74,7 @@
     node: upgraded
 
 - type: entity
-  parent: HoPIDCard
+  parent: SecurityIDCard
   id: HoPIDCardSuspicion
   components:
   - type: Unremoveable
@@ -88,3 +89,57 @@
     back: ClothingBackpackSuspicion
     outerClothing: ClothingOuterVestWebMercSuspicion
     id: HoPIDCardSuspicion
+    belt: ClothingBeltSecSuspicion
+
+- type: entity
+  parent: ClothingBeltSecurity
+  id: ClothingBeltSecSuspicion
+  name: security belt
+  description: The thing every revolutionary tider wants ahold of.
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Clothing/Belt/security.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/security.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    whitelist:
+      tags:
+        - CigPack
+        - Taser
+        - SecBeltEquip
+        - Radio
+        - Sidearm
+        - MagazinePistol
+        - MagazineMagnum
+        - CombatKnife
+        - Truncheon
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - CartridgeAmmo
+        - DoorRemote
+        - Whistle
+        - BalloonPopper
+  - type: ItemMapper
+    mapLayers:
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
