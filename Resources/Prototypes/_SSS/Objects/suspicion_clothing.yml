@@ -1,7 +1,7 @@
 ﻿# Contains the gear for the suspicion gamemode. Most of this stuff will be unremovable.
 
 - type: entity
-  parent: ClothingHeadsetAltSecurity
+  parent: ClothingHeadsetAltCentCom
   id: ClothingHeadsetGreySuspicion
   name: security bowman headset
   description: Not a headset to listen to tunes with, unfortunately.
@@ -74,7 +74,7 @@
     node: upgraded
 
 - type: entity
-  parent: SecurityIDCard
+  parent: ERTSecurityIDCard
   id: HoPIDCardSuspicion
   components:
   - type: Unremoveable
@@ -90,12 +90,13 @@
     outerClothing: ClothingOuterVestWebMercSuspicion
     id: HoPIDCardSuspicion
     belt: ClothingBeltSecSuspicion
+    pocket1: SuspicionHealthpen
 
 - type: entity
-  parent: ClothingBeltSecurity
+  parent: ClothingBeltSecurityFilled # no idea if this works i really hope it does
   id: ClothingBeltSecSuspicion
-  name: security belt
-  description: The thing every revolutionary tider wants ahold of.
+  name: emergency response security belt
+  description: The thing every revolutionary tider dreams of having.
   components:
   - type: Unremoveable
   - type: Sprite
