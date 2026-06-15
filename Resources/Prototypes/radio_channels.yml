@@ -4,6 +4,7 @@
   keycode: ";"
   frequency: 1459
   color: "#2cdb2c"
+  longRange: true
 
 - type: radioChannel
   id: CentCom
@@ -19,6 +20,7 @@
   keycode: 'c'
   frequency: 1353
   color: "#fcdf03"
+  longRange: true
 
 - type: radioChannel
   id: Engineering
@@ -26,6 +28,7 @@
   keycode: 'e'
   frequency: 1357
   color: "#ff733c"
+  longRange: true
 
 - type: radioChannel
   id: Medical
@@ -33,6 +36,7 @@
   keycode: 'm'
   frequency: 1355
   color: "#57b8f0"
+  longRange: true
 
 - type: radioChannel
   id: Science
@@ -40,6 +44,7 @@
   keycode: 'n'
   frequency: 1351
   color: "#cd7ccd"
+  longRange: true
 
 - type: radioChannel
   id: Security
@@ -47,6 +52,7 @@
   keycode: 's'
   frequency: 1359
   color: "#ff4242"
+  longRange: true
 
 - type: radioChannel
   id: Service
@@ -54,6 +60,7 @@
   keycode: 'v'
   frequency: 1349
   color: "#539c00"
+  longRange: true
 
 - type: radioChannel
   id: Supply
@@ -61,6 +68,7 @@
   keycode: 'u'
   frequency: 1347
   color: "#b48b57"
+  longRange: true
 
 - type: radioChannel
   id: Syndicate
