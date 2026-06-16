@@ -1,7 +1,7 @@
 ﻿# Contains the gear for the suspicion gamemode. Most of this stuff will be unremovable.
 
 - type: entity
-  parent: ClothingHeadsetAltCentCom
+  parent: ClothingHeadsetAltSyndicate
   id: ClothingHeadsetGreySuspicion
   name: security bowman headset
   description: Not a headset to listen to tunes with, unfortunately.
@@ -9,10 +9,9 @@
   - type: Unremoveable
 
 - type: entity
-  parent: ClothingUniformJumpsuitERTSecurity
+  parent: ClothingUniformJumpsuitOperative
   id: ClothingUniformJumpsuitColorWhiteSuspicion
-  name: emergency response security jumpsuit
-  description: A security jumpsuit. Seems standard enough.
+  name: operator jumpsuit
   components:
   - type: Unremoveable
 
@@ -32,7 +31,7 @@
       - Gun
 
 - type: entity
-  parent: ClothingOuterArmorBasic
+  parent: ClothingOuterArmorBasicSlim
   id: ClothingOuterVestWebMercSuspicion
   suffix: SSS
   components:
@@ -88,59 +87,7 @@
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSuspicion
     outerClothing: ClothingOuterVestWebMercSuspicion
-    id: HoPIDCardSuspicion
+    id: SyndiPDA
     belt: ClothingBeltSecSuspicion
     pocket1: SuspicionHealthpen
 
-- type: entity
-  parent: ClothingBeltSecurityFilled # no idea if this works i really hope it does
-  id: ClothingBeltSecSuspicion
-  name: emergency response security belt
-  description: The thing every revolutionary tider dreams of having.
-  components:
-  - type: Unremoveable
-  - type: Sprite
-    sprite: Clothing/Belt/security.rsi
-  - type: Clothing
-    sprite: Clothing/Belt/security.rsi
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
-  - type: Storage
-    whitelist:
-      tags:
-        - CigPack
-        - Taser
-        - SecBeltEquip
-        - Radio
-        - Sidearm
-        - MagazinePistol
-        - MagazineMagnum
-        - CombatKnife
-        - Truncheon
-      components:
-        - Stunbaton
-        - FlashOnTrigger
-        - SmokeOnTrigger
-        - Flash
-        - Handcuff
-        - BallisticAmmoProvider
-        - CartridgeAmmo
-        - DoorRemote
-        - Whistle
-        - BalloonPopper
-  - type: ItemMapper
-    mapLayers:
-      flashbang:
-        whitelist:
-          components:
-          - FlashOnTrigger
-      stunbaton:
-        whitelist:
-          components:
-          - Stunbaton
-      tear_gas_grenade:
-        whitelist:
-          components:
-          - SmokeOnTrigger
-    sprite: Clothing/Belt/belt_overlay.rsi
-  - type: Appearance
