@@ -40,10 +40,10 @@ public sealed partial class SuspicionRuleComponent : Component
 
 
     [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string TraitorRadio = "EncryptionKeySyndie";
+    public string TraitorRadio = "EncryptionKeyCentCom";
 
     [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<NpcFactionPrototype>))]
-    public string TraitorFaction = "Syndicate";
+    public string TraitorFaction = "Nanotrasen";
 
     [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string DetectiveRadio = "EncryptionKeySecurity";
