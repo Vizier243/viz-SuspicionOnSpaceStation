@@ -551,8 +551,8 @@
   name: healthpen
   parent: ChemicalMedipen
   id: SuspicionHealthpen
-  suffix: SUSPICION ONLY
-  description: A small Nanotrasen-branded autoinjector containing omnizine, along with Epinephrine and Tranexamic Acid. Good for dire situations.
+  suffix: SSS, DO NOT MAP
+  description: A tiny little autoinjector containing a bit of omnizine, for dire situations.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -566,9 +566,9 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 30
+        maxVol: 2 # omnizine was recently buffed and this healthpen used to contain 30 units of it before being reduced
         reagents:
         - ReagentId: Omnizine
-          Quantity: 30
+          Quantity: 2
   - type: Tag
     tags: []
