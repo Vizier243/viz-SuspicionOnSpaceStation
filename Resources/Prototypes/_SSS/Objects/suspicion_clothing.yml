@@ -16,19 +16,20 @@
   - type: Unremoveable
 
 - type: entity
-  parent: ClothingBackpackSecurity
+  parent: ClothingBackpackDuffelSyndicate
   id: ClothingBackpackSuspicion
-  name: security backpack
-  description: A very robust military backpack. For some reason, guns don't seem to fit in it...
+  name: syndicate duffel bag
+  description: A very robust military-grade duffel bag. For some reason, weapons just don't fit in it.
   components:
   - type: Unremoveable
   - type: Storage
     grid:
-    - 0,0,3,3
+    - 0,0,6,6
     maxItemSize: Huge
     blacklist:
       components:
       - Gun
+      - MeleeWeapon
 
 - type: entity
   parent: ClothingOuterArmorBasicSlim
@@ -88,6 +89,6 @@
     back: ClothingBackpackSuspicion
     outerClothing: ClothingOuterVestWebMercSuspicion
     id: SyndiPDA
-    belt: ClothingBeltSecSuspicion
+    belt: ClothingBeltMilitaryWebbing
     pocket1: SuspicionHealthpen
 
