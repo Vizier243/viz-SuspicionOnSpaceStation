@@ -256,3 +256,27 @@
     walkModifier: 1
     sprintModifier: 1
   - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackDuffelHolding
+  id: ClothingBackpackDuffelHoldingAdministrator
+  name: administrator holding duffelbag
+  description: You should adminhelp IMMEDIATELY if you see this as a normal player! Otherwise, carry on.
+  suffix: ADMIN ONLY
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/holding.rsi
+    state: icon
+    layers:
+    - state: icon
+    - state: icon-unlit
+      shader: unshaded
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,30,9
+  - type: ClothingSpeedModifier
+    sprintModifier: 2 # don't think this has any effect on aghosts but fuck it we ball
+  - type: HeldSpeedModifier
