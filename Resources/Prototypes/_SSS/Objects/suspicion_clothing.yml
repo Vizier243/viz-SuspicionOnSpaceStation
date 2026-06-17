@@ -82,6 +82,7 @@
 - type: startingGear
   id: SuspicionGear
   equipment:
+    eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetGreySuspicion
     jumpsuit: ClothingUniformJumpsuitColorWhiteSuspicion
     shoes: ClothingShoesBootsJack
