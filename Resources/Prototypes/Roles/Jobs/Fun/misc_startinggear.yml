@@ -136,7 +136,7 @@
 - type: startingGear
   id: MobAghostGear
   equipment:
-    back: ClothingBackpackSatchelHolding
+    back: ClothingBackpackDuffelHoldingAdministrator # big fuck-off duffelbag for admemes
     id: AdminPDA
   storage:
     back:
