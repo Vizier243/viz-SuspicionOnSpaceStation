@@ -261,7 +261,7 @@
   parent: ClothingBackpackDuffelHolding
   id: ClothingBackpackDuffelHoldingAdministrator
   name: administrator holding duffelbag
-  description: 'You should ahelp IMMEDIATELY if you see this as a normal player! Otherwise, carry on.'
+  description: You should adminhelp IMMEDIATELY if you see this as a normal player! Otherwise, carry on.
   suffix: ADMIN ONLY
   components:
   - type: Sprite
