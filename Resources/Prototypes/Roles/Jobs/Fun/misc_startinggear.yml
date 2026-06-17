@@ -143,7 +143,17 @@
     - GasAnalyzer
     - trayScanner
     - AccessConfiguratorUniversal
+    - UniversalIDCard # spare universal id for the access config
     - Multitool
+    - PowerDrill
+    - JawsOfLife
+    - WelderExperimental
+    - trayScanner
+    - EmagUnlimited # idk why you'd need to emag something as an aghost since you have aa but whatever here
+    - MeleeDebugGib # aghost armaments
+    - WeaponPistolDebug # aghost armaments
+    - BaseUplinkRadioDebug # debug syndie uplink, there isn't a SSS version of this though
+    - PlushieNuke # mmm plushie
 
 #Gladiator with spear
 - type: startingGear
