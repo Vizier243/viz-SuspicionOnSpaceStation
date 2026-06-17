@@ -140,6 +140,16 @@
     id: AdminPDA
   storage:
     back:
+    - WeaponTetherGunAdmin
+    - WeaponForceGunAdmin
+    - AdminHypo
+    - NocturineChemistryBottle # TODO: Compress these chembottles all into one package to insert inside the bag instead of this
+    - NocturineChemistryBottle
+    - NocturineChemistryBottle
+    - OmnizineChemistryBottle
+    - OmnizineChemistryBottle
+    - OmnizineChemistryBottle
+    - BluespaceBeaker # for mixing
     - GasAnalyzer
     - trayScanner
     - AccessConfiguratorUniversal
